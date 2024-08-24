@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Focus Mode",
+    "version": "1.0",
+    "description": "Hide everything on YouTube except the video.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
