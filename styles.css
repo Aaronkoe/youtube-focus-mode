@@ -1,0 +1,9 @@
+/* Hides all non-video elements when this class is applied to the body */
+.hide-non-video #header, 
+.hide-non-video #masthead-container,
+.hide-non-video #comments,
+.hide-non-video #related,
+.hide-non-video #below,
+.hide-non-video #footer-container {
+    display: none !important;
+}

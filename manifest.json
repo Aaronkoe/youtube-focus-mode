@@ -5,12 +5,11 @@
     "description": "Hide everything on YouTube except the video.",
     "permissions": ["activeTab"],
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icons/icon.png"
+      "default_icon": "imgs/focus_mode_icon_64_white_bg.png"
     },
     "content_scripts": [
       {
-        "matches": ["*://www.youtube.com/*"],
+        "matches": ["*://www.youtube.com/watch=*"],
         "js": ["content.js"],
         "css": ["styles.css"]
       }
